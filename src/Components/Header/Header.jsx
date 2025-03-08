@@ -5,15 +5,15 @@ export default function Header() {
   const menuLinks = [
     {
       title: 'Link A',
-      link: 'https://www.test.com',
+      link: '#',
     },
     {
       title: 'Link B',
-      link: 'https://www.test.com',
+      link: '#',
     },
     {
       title: 'Link C',
-      link: 'https://www.test.com',
+      link: '#',
     },
   ];
 

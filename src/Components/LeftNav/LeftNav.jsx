@@ -61,7 +61,7 @@ export default function LeftNav() {
       <button onClick={() => setActive((active) => !active)}>
         {active ? '\u2A2F' : '\u2630'}
       </button>
-      {leftNavData.map((leftNavSection) => {
+      {active ? leftNavData.map((leftNavSection) => {
         return (
           <>
             {leftNavSection.sectionTitle ? (
@@ -78,7 +78,7 @@ export default function LeftNav() {
             </ul>
           </>
         );
-      })}
+      }): null}
     </nav>
   );
 }
