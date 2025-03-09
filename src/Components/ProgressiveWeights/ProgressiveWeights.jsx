@@ -11,7 +11,7 @@ const ProgressiveWeights = () => {
                 data instanceof Array && 
                 data.map(item => {
                     initWeight += Number(item)
-                    return <div>{initWeight}</div>
+                    return <div>{Number(initWeight).toFixed(2)}</div>
                 })
             }
         </>
