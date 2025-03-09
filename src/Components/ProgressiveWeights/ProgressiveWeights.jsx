@@ -10,8 +10,8 @@ const ProgressiveWeights = () => {
             {
                 data instanceof Array && 
                 data.map(item => {
-                    initWeight = Number(item) + Number(initWeight)
-                    return <div>{Number(item) + Number(initWeight)}</div>
+                    initWeight += Number(item)
+                    return <div>{initWeight}</div>
                 })
             }
         </>
