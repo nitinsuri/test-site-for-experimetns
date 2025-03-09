@@ -26,8 +26,8 @@ main {
     column-gap: 2rem;
   }
   & > section {
-    width: 'calc(100% - 240px)';
-    margin: '0 auto';
+    width: calc(100% - 240px);
+    margin: 0 auto;
   }
 }
 
