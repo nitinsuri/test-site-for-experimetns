@@ -17,15 +17,20 @@
 }
 
 main {
-  display: grid;
+  display: flex;
+    column-gap: 0;
   justify-content: flex-start;
   align-items: flex-start;
-  grid-template-columns: 240px 1fr;
-  column-gap: 2rem;
-  section {
-    width: 100%;
+  &.active {
+    grid-template-columns: 240px 1fr;
+    column-gap: 2rem;
+  }
+  & > section {
+    width: 'calc(100% - 240px)';
+    margin: '0 auto';
   }
 }
+
 a:focus {
   outline: none;
 }

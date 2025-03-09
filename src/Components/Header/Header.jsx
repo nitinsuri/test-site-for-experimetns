@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import './styles.scss';
 
 export default function Header() {
@@ -22,8 +22,8 @@ export default function Header() {
       <header>
         <ul>
           {menuLinks.map((item, idx) => (
-            <li key={idx}>
-              <a href={item.link}>{item.title}</a>
+            <li  key={Math.random()}>
+              <a href={item.link}  key={Math.random()}>{item.title}</a>
             </li>
           ))}
         </ul>

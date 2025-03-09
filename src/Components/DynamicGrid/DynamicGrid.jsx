@@ -94,7 +94,7 @@ const DynamicGrid = () => {
       {getSequencedData?.map((section) => {
         return section.map((item) => {
           return (
-            <li style={{ backgroundColor: item.sectionBg }}>
+            <li style={{ backgroundColor: item.sectionBg }} key={Math.random()}>
               {item.sectionTitle ? (
                 <h2 key={Math.random()}>{item.sectionTitle}</h2>
               ) : null}
