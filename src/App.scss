@@ -1,3 +1,5 @@
+$leftNavWidth: 240px;
+
 *,
 *::before,
 *::after {
@@ -22,11 +24,11 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   &.active {
-    grid-template-columns: 240px 1fr;
+    grid-template-columns: $leftNavWidth 1fr;
     column-gap: 2rem;
   }
   & > section {
-    width: calc(100% - 240px);
+    width: calc(100% - ($leftNavWidth + 40px));
     margin: 0 auto;
   }
 }
