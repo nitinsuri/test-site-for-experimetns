@@ -26,10 +26,14 @@ main {
   &.active {
     grid-template-columns: $leftNavWidth 1fr;
     column-gap: 2rem;
+
+    & > section {
+      width: calc(100% - ($leftNavWidth + 40px));
+    }
   }
   & > section {
-    width: calc(100% - ($leftNavWidth + 40px));
     margin: 0 auto;
+    width: calc(100% - 40px);
   }
 }
 

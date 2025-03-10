@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { LeftNavStatusContext } from './Contexts/LeftNavContext/LeftNavContext';
 import Header from './Components/Header/Header';
 import LeftNav from './Components/LeftNav/LeftNav';
@@ -7,11 +7,11 @@ import ProgressiveWeights from './Components/ProgressiveWeights/ProgressiveWeigh
 import './App.scss';
 
 function App() {
-  LeftNavStatusContext;
+  const [active]  =  useContext(LeftNavStatusContext);;
   return (
     <>
       <Header />
-      <main>
+      <main className={active ? 'active': null}>
         <LeftNav />
         <section>
           <DynamicGrid />
